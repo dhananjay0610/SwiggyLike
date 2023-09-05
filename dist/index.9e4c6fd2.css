@@ -1,23 +1,34 @@
-.header {
-  border: #8a2be2;
+.header-div {
+  box-shadow: 50px;
   justify-content: space-between;
   margin: 10px;
   padding: 5px;
   display: flex;
 }
 
-.list-item > ul {
+.list-item ul {
+  text-decoration: none;
   list-style-type: none;
   display: flex;
 }
 
-.list-item > ul > li {
+.livalues {
+  text-decoration: none;
+}
+
+.list-item ul li {
   padding: 10px;
+  text-decoration: none;
 }
 
 .logo {
-  width: 70px;
+  width: 50px;
   height: 60px;
+}
+
+.title {
+  width: 70px;
+  height: 50px;
 }
 
 .card {
@@ -25,6 +36,35 @@
   width: 200px;
   margin: 10px;
   padding: 10px;
+  text-decoration: none;
+}
+
+.shimmer-card {
+  border: 1px solid #deb887;
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.shimmer-div {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+}
+
+.card, .cuisines {
+  text-decoration: none;
+}
+
+.card h3 {
+  word-wrap: break-word;
+  max-width: 100%;
+  text-decoration: none;
 }
 
 .card > img {
@@ -40,6 +80,109 @@
 .restaurant-list {
   flex-wrap: wrap;
   display: flex;
+}
+
+.filter {
+  justify-content: center;
+  padding: 10px;
+  display: flex;
+}
+
+.filter input[type="text"] {
+  color: #cacdd2;
+  border: 2px solid #cacdd2;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  width: 100%;
+  height: 20px;
+  padding: 5px;
+}
+
+.filter buton {
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #cacdd2;
+  border-radius: 0 5px 5px 0;
+  outline: none;
+  height: 36px;
+  font-size: 20px;
+}
+
+.restaurant-detail {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.arrow {
+  border: 3px solid #000;
+  border-width: 0 3px 3px 0;
+  padding: 3px;
+  display: inline-block;
+}
+
+.up {
+  transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+}
+
+.MenuCardDetails {
+  border-bottom: 1px solid gray;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+}
+
+.cardImg {
+  border-radius: 3px;
+  width: 50px;
+  height: 100%;
+  display: flex;
+}
+
+.CardDetail {
+  margin-right: 10px;
+  display: flex;
+}
+
+.recommended {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+
+.footer-content {
+  text-align: center;
+  background-color: #000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.footer-content h3 {
+  text-transform: capitalize;
+  color: wheat;
+  font-size: 2.1rem;
+  font-weight: 500;
+  line-height: 3rem;
+}
+
+.footer-content p {
+  color: #cacdd2;
+  max-width: 500px;
+  margin: 10px auto;
+  font-size: 14px;
+  line-height: 28px;
 }
 
 /*# sourceMappingURL=index.9e4c6fd2.css.map */

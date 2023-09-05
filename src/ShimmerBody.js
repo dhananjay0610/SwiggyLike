@@ -1,6 +1,14 @@
 const ShimmerBody = () => {
   // console.log(props);
-  return <h1>RestaurantCard</h1>;
+  return (
+    <div className="shimmer-div">
+      {Array(10)
+        .fill("")
+        .map(() => (
+          <div className="shimmer-card"></div>
+        ))}
+    </div>
+  );
 };
 
 export default ShimmerBody;
