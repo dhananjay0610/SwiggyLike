@@ -1,4 +1,6 @@
-const ShimmerBody = () => {
+import React from "react";
+
+const ShimmerBody = (): JSX.Element => {
   // console.log(props);
   return (
     <div className="shimmer-div">

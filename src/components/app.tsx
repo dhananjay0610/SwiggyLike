@@ -5,16 +5,23 @@ import Footer from "./Footer";
 import Body from "./Body";
 import About from "./About";
 import Contact from "./Contact";
-import { Outlet } from "react-router-dom";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import RestaurantDetail from "./RestaurantDetail";
-const AppLayout = () => {
+// import Cart from "./Cart";
+import { Provider } from "react-redux";
+import store from "../utils/store";
+import FoodCard from "./FoodCard";
+
+import Cart1 from "./Cart1";
+const AppLayout = () : JSX.Element => {
   return (
     <>
-      <Header />
-      {/* <Body /> */}
-      <Outlet />
-      <Footer />
+      <Provider store={store}>
+         <Header />
+        {/* <Body /> */}
+        <Outlet />
+        <Footer />
+      </Provider>
     </>
   );
 };
@@ -28,8 +35,9 @@ const AppRouter = createBrowserRouter([
       { path: "/contact", element: <Contact /> },
       { path: "/about", element: <About /> },
       { path: "/restaurant/:id", element: <RestaurantDetail /> },
+      { path: "/cart", element: <Cart1 /> },
     ],
   },
 ]);
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root")!);
 root.render(<RouterProvider router={AppRouter} />);

@@ -1,9 +1,15 @@
 .header-div {
   box-shadow: 50px;
   justify-content: space-between;
-  margin: 10px;
   padding: 5px;
   display: flex;
+  top: -10px;
+  box-shadow: 0 10px 50px #0000001a;
+}
+
+headerList a {
+  -webkit-text-decoration: "none";
+  text-decoration: "none";
 }
 
 .list-item ul {
@@ -31,11 +37,21 @@
   height: 50px;
 }
 
+.bodyCmp {
+  margin-left: 15%;
+  margin-right: 10%;
+}
+
 .card {
-  border: 1px solid #deb887;
+  outline: none;
   width: 200px;
-  margin: 10px;
-  padding: 10px;
+  height: 230px;
+  margin: 15px;
+  text-decoration: none;
+}
+
+.linkCard {
+  outline: none;
   text-decoration: none;
 }
 
@@ -53,18 +69,84 @@
 }
 
 .card img {
+  border-radius: 15px;
   width: 100%;
-  height: 150px;
+  height: 130px;
 }
 
-.card, .cuisines {
+.card .cuisines {
+  box-sizing: border-box;
+  color: #02060c99;
+  letter-spacing: -.3px;
+  overflow-wrap: break-word;
+  -webkit-line-clamp: 1;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  outline: 0 #02060c99;
+  -webkit-box-orient: vertical;
+  width: 186px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 19px;
   text-decoration: none;
+  list-style: none;
+  display: -webkit-box;
+  overflow: hidden;
 }
 
-.card h3 {
-  word-wrap: break-word;
-  max-width: 100%;
+.card h2 {
+  box-sizing: border-box;
+  letter-spacing: -.3px;
+  color: #02060cbf;
+  overflow-wrap: break-word;
+  -webkit-line-clamp: 1;
+  outline: none;
+  -webkit-box-orient: vertical;
+  margin-block: 0;
+  font-family: Basix Grotesque Pro;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
   text-decoration: none;
+  list-style: none;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
+.card .cardrating {
+  box-sizing: border-box;
+  letter-spacing: -.3px;
+  color: #02060cbf;
+  outline: none;
+  font-family: Basix Grotesque Pro;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  text-decoration: none;
+  list-style-position: outside;
+  display: -webkit-box;
+}
+
+.cardAreaName {
+  box-sizing: border-box;
+  color: #02060c99;
+  letter-spacing: -.3px;
+  overflow-wrap: break-word;
+  -webkit-line-clamp: 1;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  outline: 0 #02060c99;
+  -webkit-box-orient: vertical;
+  width: 186px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 19px;
+  text-decoration: none;
+  list-style: none;
+  display: -webkit-box;
+  overflow: hidden;
 }
 
 .card > img {
@@ -84,12 +166,13 @@
 
 .filter {
   justify-content: center;
+  margin-left: 1%;
+  margin-right: 14.5%;
   padding: 10px;
   display: flex;
 }
 
 .filter input[type="text"] {
-  color: #cacdd2;
   border: 2px solid #cacdd2;
   border-right: none;
   border-radius: 5px 0 0 5px;
@@ -118,7 +201,9 @@
 .arrow {
   border: 3px solid #000;
   border-width: 0 3px 3px 0;
+  outline: none;
   padding: 3px;
+  text-decoration: none;
   display: inline-block;
 }
 
@@ -130,34 +215,138 @@
   transform: rotate(45deg);
 }
 
-.MenuCardDetails {
+.menuCardDetails {
+  box-sizing: border-box;
+  color: #282c3f;
   border-bottom: 1px solid gray;
-  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -webkit-box-pack: justify;
   justify-content: space-between;
+  align-items: flex-start;
   width: 100%;
-  height: 100px;
-  margin: 20px;
-  padding: 10px;
+  height: 134px;
+  margin: 15px 0 0;
+  padding-bottom: 15px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
   display: flex;
+}
+
+.CardDetail {
+  box-sizing: border-box;
+  color: #282c3f;
+  letter-spacing: normal;
+  max-width: calc(100%-144px);
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  outline-style: none;
+  outline-color: #282c3f;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 17px;
+  display: block;
+}
+
+.cardName {
+  box-sizing: border-box;
+  color: #282c3f;
+  letter-spacing: normal;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  outline-color: #282c3f;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  display: block;
+}
+
+.cardPrice {
+  box-sizing: border-box;
+  color: #282c3f;
+  letter-spacing: normal;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  outline-color: #282c3f;
+  align-items: center;
+  margin-top: 4px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  display: block;
+}
+
+.cardDescription {
+  box-sizing: border-box;
+  color: #282c3f73;
+  letter-spacing: -.3px;
+  letter-spacing: normal;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  outline-color: #282c3f;
+  align-items: center;
+  margin-top: 14px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  display: block;
 }
 
 .cardImg {
   border-radius: 3px;
   width: 50px;
-  height: 100%;
   display: flex;
 }
 
-.CardDetail {
-  margin-right: 10px;
-  display: flex;
+.cardImg img {
+  border-radius: 15px;
+  width: 100px;
+  height: 90px;
+}
+
+.cardBtns {
+  box-sizing: border-box;
+  color: #282c3f;
+  outline-style: none;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  min-width: 118px;
+  height: 120px;
+  margin-left: 16px;
+  font-size: 0;
+  font-weight: 300;
+  display: block;
+  position: relative;
+}
+
+.cardBtns button {
+  color: #60b246;
+  cursor: pointer;
+  border-color: #7dc21e;
+  border-radius: .25rem;
+  margin-top: 2px;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 2px;
+  box-shadow: 0 4px 12px #0000001a;
 }
 
 .recommended {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 15px;
   display: flex;
+}
+
+.recommended button {
+  outline: none;
 }
 
 .footer-content {
@@ -183,6 +372,95 @@
   margin: 10px auto;
   font-size: 14px;
   line-height: 28px;
+}
+
+.cartUserDetail {
+  background-color: #fff;
+  grid-area: col1;
+}
+
+.cartMenu {
+  background-color: #fff;
+  grid-area: col2;
+}
+
+.cartPage {
+  grid-template-areas: "col1 col1 col2";
+  padding: 10px;
+  display: grid;
+}
+
+.loggedInDetail {
+  color: #000;
+  background-size: auto;
+  background-attachment: scroll;
+  background-clip: border-box;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  margin-right: 0;
+  padding: 30px;
+  font-size: 14px;
+  font-weight: 300;
+  display: block;
+}
+
+.cartPage {
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 10px;
+  display: block;
+}
+
+.MenuCard {
+  border: 1px solid #282c3f;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 5px;
+  display: flex;
+}
+
+.RestaurantDetails {
+  box-sizing: border-box;
+  color: #282c3f;
+  outline-color: #282c3f;
+  margin-bottom: 18px;
+  padding-top: 16px;
+  font-size: 14px;
+  display: flex;
+}
+
+.RestaurantName {
+  box-sizing: border-box;
+  color: #282c3f;
+  outline-style: none;
+  width: 650px;
+  margin-right: 16px;
+  font-size: 14px;
+  font-weight: 300;
+  display: inline-block;
+}
+
+.RestaurantRating {
+  color: #7dc21e;
+  border: 1px;
+}
+
+.NameDiv {
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+}
+
+.RestaurantName p {
+  box-sizing: border-box;
+  letter-spacing: normal;
+  text-overflow: ellipsis;
+  font-weight: 300;
+  line-height: 15px;
+  display: block;
 }
 
 /*# sourceMappingURL=index.9e4c6fd2.css.map */
