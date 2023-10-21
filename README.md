@@ -58,13 +58,3 @@ We welcome contributions from the community. If you'd like to contribute to this
 3. Make your changes and commit them: `git commit -m "Add feature or fix"`.
 4. Push your changes to your fork: `git push origin feature-name`.
 5. Open a pull request on the main repository.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Contact
-
-If you have any questions or suggestions, feel free to reach out to us at [your@email.com](mailto:your@email.com).
-
-Happy coding! 🍔🍕🍰
